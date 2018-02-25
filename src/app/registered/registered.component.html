@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="col-lg">
+    <h3>Registered Student</h3>
+    <table class="table">
+      <tbody>
+        <th>#</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>EMAIL</th>
+        <th>COURSE</th>
+          <tr *ngFor="let studentList of studentDetail;let i = index">
+            <td>
+              {{i + 1}}.                
+            </td>
+            <td>
+              {{studentList?.firstName}} 
+            </td>  
+            <td>
+              {{studentList?.lastName}}
+            </td>            
+            <td>
+              {{studentList?.email}}
+            </td>
+            <td>
+              {{studentList?.courseOption}}                  
+            </td>                                     
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
